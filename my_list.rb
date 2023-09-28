@@ -1,14 +1,16 @@
 require_relative 'my_enumerable'
 
-class MyList #class
-  include MyEnumerable #module
+# class
+class MyList
+  include MyEnumerable # module
 
-  def initialize(*elements) #constructor
+  # constructor
+  def initialize(*elements)
     @list = elements
   end
 
-  def each(&block) #each method to iterate
+  # each method to iterate
+  def each(&block)
     @list.each(&block)
   end
-  
 end
